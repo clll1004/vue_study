@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>20190618 Using Event Bus</h2>
+    <control-area></control-area>
+    <view-area ></view-area>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ViewArea from './components/ViewArea.vue'
+import ControlArea from './components/ControlArea.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ViewArea,
+    ControlArea
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @font-face {
+    font-family: 'makdae';
+    src: url('font/HoonMakdaeyunpilR.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'yanolza';
+    src: url('font/야놀자 야체 Regular.ttf') format('truetype');
+  }
+  * { margin: 0; padding: 0; }
+  body {
+    padding: 20px;
+    background: #f6f6f6;
+  }
+  h2 {
+    margin: 20px 0;
+    color: #aaa;
+  }
 </style>

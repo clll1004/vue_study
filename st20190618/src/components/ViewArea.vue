@@ -25,15 +25,16 @@ export default {
 <style lang="scss" scoped>
     textarea {
         width: 100%;
-        min-height: 100px;
+        min-height: 400px;
         padding: 15px;
         font-size: 12px;
-        border: none;
+        border: 1px solid #ddd;
         border-radius: 10px;
         box-sizing: border-box;
         outline: none;
         resize: none;
         background: #fff;
+        overflow: hidden;
     }
 </style>
 
